@@ -1,8 +1,5 @@
 import { PostCard } from "./PostCard";
-import { Card } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Plus, Image, Video, Smile } from "lucide-react";
+import { Stories } from "./Stories";
 
 const samplePosts = [
   {
@@ -64,38 +61,8 @@ const samplePosts = [
 export const MainFeed = () => {
   return (
     <div className="flex-1 max-w-2xl mx-auto">
-      {/* Create Post */}
-      <Card className="p-4 mb-6 shadow-soft">
-        <div className="flex items-center gap-3 mb-4">
-          <Avatar className="h-10 w-10">
-            <AvatarImage src="/lovable-uploads/3e98e700-9514-487c-812b-c4571f27bd43.png" />
-            <AvatarFallback>YU</AvatarFallback>
-          </Avatar>
-          <div className="flex-1 bg-muted rounded-full px-4 py-2 cursor-pointer hover:bg-secondary transition-smooth">
-            <span className="text-muted-foreground">What's on your mind?</span>
-          </div>
-        </div>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="gap-2 hover:bg-playure-blue-light hover:text-playure-blue-dark transition-smooth">
-              <Image className="h-4 w-4" />
-              Photo
-            </Button>
-            <Button variant="ghost" size="sm" className="gap-2 hover:bg-playure-blue-light hover:text-playure-blue-dark transition-smooth">
-              <Video className="h-4 w-4" />
-              Video
-            </Button>
-            <Button variant="ghost" size="sm" className="gap-2 hover:bg-playure-blue-light hover:text-playure-blue-dark transition-smooth">
-              <Smile className="h-4 w-4" />
-              Feeling
-            </Button>
-          </div>
-          <Button className="bg-playure-gradient hover:shadow-medium transition-smooth">
-            <Plus className="h-4 w-4 mr-2" />
-            Post
-          </Button>
-        </div>
-      </Card>
+      {/* Stories Section */}
+      <Stories />
 
       {/* Posts */}
       <div className="space-y-4">
