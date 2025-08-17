@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Sidebar } from "@/components/Layout/Sidebar";
+import { RightPanel } from "@/components/Layout/RightPanel";
+import { MainFeed } from "@/components/Feed/MainFeed";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      {/* Sidebar */}
+      <Sidebar />
+      
+      {/* Main Content */}
+      <div className="ml-64 mr-80 min-h-screen">
+        <div className="py-6 px-4">
+          <MainFeed />
+        </div>
       </div>
+      
+      {/* Right Panel */}
+      <RightPanel />
     </div>
   );
 };

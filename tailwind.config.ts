@@ -61,7 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				playure: {
+					blue: 'hsl(var(--playure-blue))',
+					'blue-light': 'hsl(var(--playure-blue-light))',
+					'blue-dark': 'hsl(var(--playure-blue-dark))'
 				}
+			},
+			backgroundImage: {
+				'playure-gradient': 'var(--playure-gradient)',
+				'playure-gradient-subtle': 'var(--playure-gradient-subtle)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'strong': 'var(--shadow-strong)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
